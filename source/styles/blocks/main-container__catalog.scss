@@ -1,3 +1,17 @@
 .catalog__title {
   color: #000000;
 }
+
+.description__subtitle {
+  color: $special_dark-grey-2;
+}
+
+.caption__text {
+  color: $special_dark-grey;
+}
+
+.card-item__button {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $basic_green;
+}

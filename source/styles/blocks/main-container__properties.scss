@@ -12,6 +12,10 @@
   text-transform: uppercase;
 }
 
+.weight-loss__main-text {
+  color: $special_dark-grey;
+}
+
 .weight-gain {
   background-color: #f2f2f2;
 }
@@ -24,4 +28,8 @@
   text-decoration: none;
   color: #000000;
   text-transform: uppercase;
+}
+
+.weight-gain__main-text {
+  color: $special_dark-grey;
 }
