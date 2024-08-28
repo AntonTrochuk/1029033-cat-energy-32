@@ -1,9 +1,22 @@
 .main-container__properties {
   margin: 0;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .properties-weight-gain {
   background-color: #f2f2f2;
+  min-height: 266px;
+}
+
+.properties-weight-loss-head {
+  display: flex;
+}
+
+.properties-weight-gain-head {
+  display: flex;
 }
 
 .properties-weight-gain-subtitle {
@@ -22,6 +35,7 @@
 
 .properties-weight-loss {
   background-color: #f2f2f2;
+  min-height: 266px;
 }
 
 .properties-weight-loss-subtitle {
@@ -38,10 +52,14 @@
   color: $special_dark-grey;
 }
 
-.properties-weight-loss-head {
+.properties-weight-loss-head-image {
+  min-width: 50px;
+  min-height: 53px;
   background-image: url("../../icons/cat_loss.svg");
 }
 
-.properties-weight-gain-head {
+.properties-weight-gain-head-image {
+  min-width: 67px;
+  min-height: 50px;
   background-image: url("../../icons/cat_weight.svg");
 }

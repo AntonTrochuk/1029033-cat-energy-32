@@ -26,7 +26,6 @@
     </a>
 
     <a class="main-header-link logo-text" href="#">
-
       <picture>
         <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo_text_desktop.svg">
         <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo_text_desktop.svg">
@@ -34,10 +33,15 @@
       </picture>
     </a>
 
+    <button class="main-header-toggle main-header-toggle--open" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
+
+    <button class="main-header-toggle main-header-toggle--close" type="button">
+      <span class="visually-hidden">Закрыть меню</span>
+    </button>
+
     <nav class="main-header__navigation navigation">
-      <button class="navigation-toggle navigation-toggle--open" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <ul class="navigation__wrapper wrapper">
         <li class="wrapper-item">
           <a class="wrapper-link wrapper-link--active subtitle-text-wrapper" href="index.html">
@@ -55,12 +59,9 @@
           </a>
         </li>
       </ul>
-
-      <button class="navigation-toggle navigation-toggle--close" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
     </nav>
   </header>
+
   <main class="main-container">
     <section class="main-container__promo preview">
       <div class="preview-content">
@@ -78,9 +79,13 @@
       </picture>
       <button class="preview-button button-basic text-main-button" type="button">Подобрать программу</button>
     </section>
+
     <section class="main-container__properties properties">
       <div class="properties-weight-loss">
         <div class="properties-weight-loss-head">
+          <div class="properties-weight-loss-head-image">
+            <span class="visually-hidden">Иконка похудевшей кошки</span>
+          </div>
           <h2 class="properties-weight-loss-subtitle subtitle-text-normal">
             Похудение
           </h2>
@@ -99,6 +104,9 @@
       </div>
       <div class="properties-weight-gain">
         <div class="properties-weight-gain-head">
+          <div class="properties-weight-gain-head-image">
+            <span class="visually-hidden">Иконка набравшей массу кошки</span>
+          </div>
           <h2 class="properties-weight-gain-subtitle subtitle-text-normal">
             Набор массы
           </h2>
@@ -116,33 +124,34 @@
         </div>
       </div>
     </section>
+
     <section class="main-container__advantages advantages">
       <h2 class="advantages-subtitle subtitle-text-big">Как это работает</h2>
-      <div class="advantages-useful-substances">
+      <div class="advantages-useful-substances advantages-block">
         <div class="advantages-useful-substances-image">
         </div>
-        <p class="advantages-useful-substances-text useful-substances-text-color explaining-text-basic">
+        <p class="advantages-useful-substances-text useful-substances-text-block explaining-text-basic">
           Функциональное питание содержит только полезные питательные вещества.
         </p>
       </div>
-      <div class="advantages-quick-cooking">
+      <div class="advantages-quick-cooking advantages-block">
         <div class="advantages-quick-cooking-image">
         </div>
-        <p class="advantages-quick-cooking-text useful-substances-text-color explaining-text-basic">
+        <p class="advantages-quick-cooking-text useful-substances-text-block explaining-text-basic">
           Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </p>
       </div>
-      <div class="advantages-functional-nutrition">
+      <div class="advantages-functional-nutrition advantages-block">
         <div class="advantages-functional-nutrition-image">
         </div>
-        <p class="advantages-functional-nutrition-text useful-substances-text-color explaining-text-basic">
+        <p class="advantages-functional-nutrition-text useful-substances-text-block explaining-text-basic">
           Замените один-два приема обычной еды на наше функциональное питание.
         </p>
       </div>
-      <div class="advantages-time-change">
+      <div class="advantages-time-change advantages-block">
         <div class="advantages-time-change-image">
         </div>
-        <p class="advantages-time-change-text useful-substances-text-color explaining-text-basic">
+        <p class="advantages-time-change-text useful-substances-text-block explaining-text-basic">
           Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
         </p>
       </div>

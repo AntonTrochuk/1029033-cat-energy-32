@@ -1,24 +1,98 @@
+.preview {
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .preview-content {
-  width: 320px;
-  height: 302px;
-  background-image: url("../../images/index_background_desktop_green@2x.jpg");
-  background-color: $basic_green;
-  background-blend-mode: overlay;
+  min-width: 320px;
+  min-height: 302px;
+  background-image: url("../../images/hero-background-desktop@2x@2x.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  margin-bottom: 138px;
 }
 
 .preview-title {
   color: #ffffff;
+  margin: 0;
+  padding: 27px 35px 25px;
+  text-align: center;
 }
 
 .preview-text {
+  display: flex;
+  justify-content: center;
+  padding: 0 42px 29px 40px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .preview-button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: $basic_green;
+  border: 1px solid $basic_green;
+  padding: 10px 64px;
+}
+
+.preview-image {
+  position: absolute;
+  top: 167px;
+  left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .preview {
+    min-height: 875px;
+    position: relative;
+  }
+
+  .preview-image {
+    position: static;
+    padding: 0 29px 0 30px;
+  }
+
+  .preview-content {
+    background-image: none;
+    background-color: #ffffff;
+    margin: 0;
+    width: 768px;
+    height: 266px;
+  }
+
+  .preview-title {
+    color: #000000;
+  }
+
+  .preview-text {
+    color: #000000;
+  }
+
+  .preview-button {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: $basic_green;
+    border: 1px solid $basic_green;
+    padding: 10px 64px;
+    position: absolute;
+    top: 295px;
+    left: 120px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .preview-content {
+    width: 720px;
+    height: 694px;
+    background-image: url("../../images/index_background_desktop_green@2x.jpg");
+    background-color: $basic_green;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 720px;
+  }
 }
