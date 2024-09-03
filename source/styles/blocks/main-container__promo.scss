@@ -5,23 +5,23 @@
   position: relative;
 }
 
-.preview-content {
+.preview__content {
   min-width: 320px;
   min-height: 302px;
-  background-image: url("../../images/hero-background-desktop@2x@2x.jpg");
+  background-image: url("../../images/hero-background-mobile@2x.png");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 138px;
 }
 
-.preview-title {
+.preview__title {
   color: #ffffff;
   margin: 0;
   padding: 27px 35px 25px;
   text-align: center;
 }
 
-.preview-text {
+.preview__text {
   display: flex;
   justify-content: center;
   padding: 0 42px 29px 40px;
@@ -30,18 +30,20 @@
   text-align: center;
 }
 
-.preview-button {
+.preview__image {
+  position: absolute;
+  top: 62.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.preview__button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: $basic_green;
   border: 1px solid $basic_green;
-  padding: 10px 64px;
-}
-
-.preview-image {
-  position: absolute;
-  top: 167px;
-  left: 20px;
+  padding: 10px 63px;
+  margin: 0 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -50,17 +52,9 @@
     position: relative;
   }
 
-  .preview-image {
+  .preview__image {
     position: static;
     padding: 0 29px 0 30px;
-  }
-
-  .preview-content {
-    background-image: none;
-    background-color: #ffffff;
-    margin: 0;
-    width: 768px;
-    height: 266px;
   }
 
   .preview-title {

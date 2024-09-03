@@ -2,11 +2,139 @@
   background-color: #eaeaea;
 }
 
-.example-text {
+.example {
+  padding: 25px 20px 40px;
+}
+
+.example__subtitle {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.example__relationship-subtitle {
+  text-align: center;
+  margin: 0;
+  min-width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.example__text {
+  color: $special_dark-grey;
+  margin-bottom: 20px;
+}
+
+.example__relationship {
+  display: flex;
+  gap: 32px;
+  position: relative;
+  margin-bottom: 34px;
+}
+
+.example__relationship-text {
   color: $special_dark-grey;
 }
 
-.relationship-text {
-  color: $special_dark-grey;
+.relationship-text-left {
+  width: 77px;
+  min-height: 24px;
+  position: absolute;
+  top: 46px;
+  left: 22px;
+  background-color: #eaeaea;
+  text-align: center;
 }
 
+.relationship-text-right {
+  width: 87px;
+  min-height: 31px;
+  position: absolute;
+  top: 48px;
+  left: 174px;
+  background-color: #eaeaea;
+  text-align: center;
+}
+
+.example__expenses-subtitle {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.example__slider {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #666666;
+    border-radius: 2px;
+    z-index: 1;
+    height: 256px;
+    width: 4px;
+  }
+
+  &:has(.example-button:hover)::before {
+    background-color: #008000;
+  }
+}
+
+.example__slider-image {
+  overflow: hidden;
+}
+
+.example__image {
+  position: relative;
+
+  &--leftShift {
+    right: 100%;
+  }
+}
+
+.example__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #666666;
+  z-index: 2;
+
+  &::after {
+    content: "";
+    background-color: #666666;
+    mask-image: url("../../icons/double-triangle-arrow.svg");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    height: 18px;
+    width: 24px;
+  }
+
+  &:hover {
+    border-color: #008000;
+
+    &::after {
+      background-color: #008000;
+    }
+  }
+}

@@ -1,32 +1,47 @@
-.subtitle-text-big {
+.advantages {
+  margin: 0 20px 49px;
+  box-sizing: border-box;
+}
+
+.advantages__subtitle {
   color: #000000;
-}
-
-.useful-substances-text-block {
-  color: $special_dark-grey;
-  width: 200px;
   margin: 0;
+  margin-bottom: 40px;
 }
 
-.advantages-useful-substances-image {
+.advantages__useful {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.advantages__useful-substances-image {
   width: 60px;
   height: 60px;
   background-image: url("../../icons/useful_substances.svg");
 }
 
-.advantages-quick-cooking-image {
+.useful-substances-text-block {
+  color: $special_dark-grey;
+  width: 200px;
+  min-height: 54px;
+  margin: 0;
+}
+
+.advantages__quick-cooking-image {
   width: 60px;
   height: 60px;
   background-image: url("../../icons/quick_cooking.svg");
 }
 
-.advantages-functional-nutrition-image {
+.advantages__functional-nutrition-image {
   width: 60px;
   height: 60px;
   background-image: url("../../icons/functional_nutrition.svg");
 }
 
-.advantages-time-change-image {
+.advantages__time-change-image {
   width: 60px;
   height: 60px;
   background-image: url("../../icons/time-change.svg");
