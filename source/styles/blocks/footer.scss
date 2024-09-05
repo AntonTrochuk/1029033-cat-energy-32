@@ -32,3 +32,22 @@
   color: $special_dark-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .footer__image {
+    margin: 0;
+  }
+
+  .footer__hr {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__network-academy {
+    margin: 0;
+  }
+}

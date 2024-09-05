@@ -22,3 +22,35 @@
   color: $special_dark-grey;
 }
 
+@media (min-width: $tablet-width) {
+  .secondary-subtitle-normal {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .explaining-text-normal {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .main-container__cooperation {
+    margin: 0 30px;
+  }
+
+  .cooperation {
+    padding: 61px 40px;
+    justify-content: space-between;
+  }
+
+  .cooperation__subtitle {
+    text-align: left;
+    width: 163px;
+    min-height: 78px;
+  }
+
+  .cooperation__address {
+    text-align: right;
+    width: 157px;
+    min-height: 80px;
+  }
+}

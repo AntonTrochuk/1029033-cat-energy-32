@@ -47,46 +47,106 @@
 }
 
 @media (min-width: $tablet-width) {
+  .text-main-button {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .title-text {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .title-text-small {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
   .preview {
+    display: block;
     min-height: 875px;
-    position: relative;
   }
 
-  .preview__image {
-    position: static;
-    padding: 0 29px 0 30px;
+  .preview__content {
+    background-image: none;
+    margin: 0;
   }
 
-  .preview-title {
-    color: #000000;
-  }
-
-  .preview-text {
-    color: #000000;
-  }
-
-  .preview-button {
+  .preview__button {
     text-transform: uppercase;
     color: #ffffff;
     background-color: $basic_green;
     border: 1px solid $basic_green;
-    padding: 10px 64px;
+    padding: 14px 26px;
+    margin: 0;
     position: absolute;
     top: 295px;
     left: 120px;
+    z-index: 1;
+    box-sizing: border-box;
+  }
+
+  .preview__image {
+    position: absolute;
+    top: 65%;
+    padding: 0;
+    z-index: -1;
+  }
+
+  .preview__title {
+    color: #000000;
+    padding: 65px 0 0 120px;
+    width: 416px;
+    text-align: left;
+  }
+
+  .preview__text {
+    color: #000000;
+    display: inline-block;
+    padding: 40px 0 0 120px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .preview-content {
-    width: 720px;
-    height: 694px;
-    background-image: url("../../images/index_background_desktop_green@2x.jpg");
-    background-color: $basic_green;
-    background-blend-mode: overlay;
-    background-repeat: no-repeat;
-    background-size: contain;
+  .preview {
+    margin: 0 110px;
+    min-height: 550px;
+  }
+
+  .preview__content {
+    position: relative;
+    padding: 110px 0 372px 80px;
+    min-height: 180px;
+
+    &::after {
+      content: "";
+      width: 720px;
+      height: 694px;
+      background-image: url("../../images/hero-background-desktop@2x.jpg");
+      position: absolute;
+      top: -19%;
+      right: -10%;
+      z-index: -1;
+    }
+  }
+
+  .preview__image {
+    top: 42%;
+    left: 59.5%;
+  }
+
+  .preview__title {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .preview__text {
+    padding: 0;
+  }
+
+  .preview__button {
     position: absolute;
-    left: 720px;
+    top: 342px;
+    left: 80px;
   }
 }

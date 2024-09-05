@@ -7,4 +7,12 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+
+    .catalog-text {
+      color: #111111;
+    }
+  }
 }
