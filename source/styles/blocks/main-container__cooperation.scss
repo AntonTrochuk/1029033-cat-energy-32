@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
+  background-color: #f2f2f2;
 }
 
 .cooperation__subtitle {
@@ -35,12 +36,11 @@
   }
 
   .main-container__cooperation {
-    margin: 0 30px;
     height: 80px;
   }
 
   .cooperation {
-    padding: 60px 40px;
+    padding: 60px 70px;
     justify-content: space-between;
   }
 
@@ -63,14 +63,14 @@
 
 @media (min-width: $desktop-width) {
   .cooperation {
-    margin: 0;
+    margin: 0 auto;
     padding: 60px 78px 60px 80px;
     width: 407px;
     height: 79px;
     align-items: center;
     position: absolute;
     background-color: #ffffff;
-    top: 2355px;
+    top: 2415px;
     left: 110px;
   }
 

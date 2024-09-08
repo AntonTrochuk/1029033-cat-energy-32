@@ -10,6 +10,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
     justify-content: space-between;
     padding: 66px 110px;
   }
